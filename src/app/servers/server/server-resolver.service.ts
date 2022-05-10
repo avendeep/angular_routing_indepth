@@ -23,7 +23,7 @@ export class ServerResolver
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ):Observable<Server> | Promise<Server> | Server {
-   
+    
     return this.serverService.getServer(+route.params['id']);
   }
 }
